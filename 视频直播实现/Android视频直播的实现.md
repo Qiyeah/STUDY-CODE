@@ -2,7 +2,7 @@
 [collect]: http://img.blog.csdn.net/20161202110002525 "采集"
 [controller]:http://img.blog.csdn.net/20161202110101073 "处理"
 [protocol]:http://img.blog.csdn.net/20161202131930082 "协议"
-
+# #来自：[CSDN Watson的博客](http://blog.csdn.net/huaxun66)
 # 视频直播流程
 ## 视频直播的流程可以分为如下几步： 
 
