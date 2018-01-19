@@ -43,4 +43,22 @@ public class DateUtil {
     public double diffDays(String date2, String date1){
         return (int) ((str2Date(date2,pattern).getTime() - str2Date(date1,pattern).getTime()) / (1000*3600*24));
     }
+
+    public int[] date2IntArray(String date, String regex) {
+        String[] arr = date.split(regex);
+        int[] temp = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            temp[i] = Integer.valueOf(temp[i]);
+        }
+        return temp;
+    }
+
+    public static String formatDate(int... data){
+        String date = "";
+        for (int i = 0; i < data.length-1; i++) {
+            date += (data[i]<10?0+data[i]:data[i])+"-";
+        }
+        date += data[data.length-1];
+        return date;
+    }
 }
